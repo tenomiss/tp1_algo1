@@ -19,6 +19,9 @@ def test_facteur_premiers():
   assert facteurs_premiers(3)==[3]
   assert facteurs_premiers(11)==[11]
   assert facteurs_premiers(21)==[3,7]
+  assert facteurs_premiers(150)==[2,3,5,5]
+  assert facteurs_premiers(97) == [97]
+  
   assert facteurs_premiers(2639)==[7,13,29]
   print('  OK')
 
