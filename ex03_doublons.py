@@ -5,7 +5,8 @@ def eliminer_doublons(liste):
   while i<len(liste):
     if liste[i]==liste[i-1]:
       liste.pop(i)
-    i += 1
+      i -= 1
+    i += 1 
   return liste
 
 
@@ -14,6 +15,7 @@ def test_eliminer_doublons():
   assert eliminer_doublons([])==[]
   assert eliminer_doublons([7])==[7]
   assert eliminer_doublons([7,7])==[7]
+  assert eliminer_doublons([10,10,10,2,2,2,2]) == [10,2]
   assert eliminer_doublons([7,9,10,2])==[7,9,10,2]
   assert eliminer_doublons([7,7,9,10,2])==[7,9,10,2]
   assert eliminer_doublons([7,9,10,2,2])==[7,9,10,2]
