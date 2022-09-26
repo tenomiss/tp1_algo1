@@ -8,7 +8,7 @@ def facteurs_premiers(n):
     if n%d==0:
       n = n//d
       facteurs.append(d)
-    d += 1
+  else : d += 1
   return facteurs
 
 
